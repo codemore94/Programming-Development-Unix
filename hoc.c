@@ -30,5 +30,15 @@ int gargc;
 
 
 
-yylex();
+yylex(){
+	while((c=getc(fin))== ´ ´ || c == ´ \t ´)
+		;
+	if(c == EOF)
+		return 0;
+
+	if(c == ´.´ || isdigit(c)){
+		double d;
+	}
+		return 0;
+}
 
